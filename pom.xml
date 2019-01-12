@@ -18,6 +18,19 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <!-- Web模块相关依赖 -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
     <!-- 模块说明：这里声明多个子模块 -->
     <modules>
         <module>demo-web</module>
