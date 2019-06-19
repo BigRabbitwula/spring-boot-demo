@@ -24,8 +24,6 @@ import java.util.HashMap;
 @RestController
 @RequestMapping("user")
 public class UserController {
-    @Value("${name}")
-    private String name;
 
     @Autowired
     private JedisPool jedisPool;
