@@ -36,6 +36,7 @@
         <module>demo-web</module>
         <module>demo-service</module>
         <module>demo-model</module>
+        <module>demo-business</module>
     </modules>
 
 

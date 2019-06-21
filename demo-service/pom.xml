@@ -19,6 +19,11 @@
             <!--<groupId>org.springframework.boot</groupId>-->
             <!--<artifactId>spring-boot-starter-activemq</artifactId>-->
         <!--</dependency>-->
+        <dependency>
+            <groupId>com.gy</groupId>
+            <artifactId>demo-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 
