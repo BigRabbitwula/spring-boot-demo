@@ -1,5 +1,6 @@
 package com.gy.vo;
 
+import com.gy.annotation.TestAnnotation;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 
@@ -10,11 +11,11 @@ import org.springframework.context.annotation.PropertySource;
  * @Version 1.0
  * @Precept 哈哈哈
  */
+@TestAnnotation(name = "guyu",phoneNum = 18861763819L)
 public class UserVO {
 
     private Long id;
 
-    @Value("${name}")
     private String name;
 
     public Long getId() {
