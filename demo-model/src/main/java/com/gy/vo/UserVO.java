@@ -14,9 +14,30 @@ import org.springframework.context.annotation.PropertySource;
 @TestAnnotation(name = "guyu",phoneNum = 18861763819L)
 public class UserVO {
 
+    /**
+     * 主键id
+     */
     private Long id;
 
+    /**
+     * 姓名
+     */
     private String name;
+
+    /**
+     * 住址
+     */
+    private String address;
+
+    /**
+     * 手机号
+     */
+    private String phoneNumber;
+
+    /**
+     * 订单号
+     */
+    private Long orderCode;
 
     public Long getId() {
         return id;
@@ -32,5 +53,40 @@ public class UserVO {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Long getOrderCode() {
+        return orderCode;
+    }
+
+    public void setOrderCode(Long orderCode) {
+        this.orderCode = orderCode;
+    }
+
+    @Override
+    public String toString() {
+        return "UserVO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", orderCode=" + orderCode +
+                '}';
     }
 }

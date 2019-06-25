@@ -1,15 +1,13 @@
 package com.gy.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * TestAnnotation的集合类
  */
 @Target({ElementType.ANNOTATION_TYPE,ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
+@Inherited
 public @interface TestAnnotations {
     TestAnnotation[] value();
 }
