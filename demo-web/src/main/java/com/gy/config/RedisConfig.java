@@ -7,6 +7,9 @@ import org.springframework.context.annotation.PropertySource;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 @Configuration
 @PropertySource("classpath:redis.properties")
 public class RedisConfig {

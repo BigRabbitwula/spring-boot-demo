@@ -1,6 +1,7 @@
 package com.gy.api;
 
-import org.springframework.beans.factory.annotation.Value;
+
+import java.util.Scanner;
 
 /**
  * @Description

@@ -1,17 +1,16 @@
 package com.gy.controller;
 
 import com.gy.api.Test;
-import com.gy.listeners.TestListener;
 import com.gy.vo.UserVO;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+
 import java.util.HashMap;
 import javax.jms.Destination;
 
@@ -38,9 +37,8 @@ public class UserController {
      * @Date 2019/1/11 18:10
      */
     @RequestMapping("/getUserInfo.do")
-    @ResponseBody
     public Object getUserInfo(){
-        HashMap result = new HashMap(3);
+        HashMap<String,Object> result = new HashMap<>();
         Test test = new Test();
         result.put("code",0);
         result.put("data",test);
@@ -66,5 +64,6 @@ public class UserController {
     public void Listener2(String context){
         System.out.println("listener2 get message :"+context);
     }
+
 
 }
