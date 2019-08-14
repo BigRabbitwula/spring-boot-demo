@@ -1,6 +1,7 @@
 package com.gy.controller;
 
 import com.gy.api.Test;
+import com.gy.listeners.TestListener;
 import com.gy.vo.UserVO;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,9 @@ public class UserController {
 
     @Autowired
     private JmsTemplate jmsTemplate;
+
+    @Autowired
+    private TestListener testListener;
 
     /**
      * 获取用户信息接口
@@ -64,6 +68,5 @@ public class UserController {
     public void Listener2(String context){
         System.out.println("listener2 get message :"+context);
     }
-
 
 }
